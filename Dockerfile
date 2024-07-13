@@ -8,7 +8,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["src/PG.Crossfit.Ranking/PG.Crossfit.Ranking.WebApi/PG.Crossfit.Ranking.WebApi.csproj", "PG.Crossfit.Ranking.WebApi/"]
-RUN dotnet restore "src/PG.Crossfit.Ranking/PG.Crossfit.Ranking.WebApi/PG.Crossfit.Ranking.WebApi.csproj"
+RUN dotnet restore "./PG.Crossfit.Ranking/PG.Crossfit.Ranking.WebApi/PG.Crossfit.Ranking.WebApi.csproj"
 COPY . .
 
 RUN dotnet build "src/PG.Crossfit.Ranking/PG.Crossfit.Ranking.WebApi/PG.Crossfit.Ranking.WebApi.csproj" -c $BUILD_CONFIGURATION -o /app/build
