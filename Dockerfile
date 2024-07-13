@@ -9,7 +9,7 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["src/PG.Crossfit.Ranking.WebApi/PG.Crossfit.Ranking.WebApi.csproj", "PG.Crossfit.Ranking.WebApi/"]
+COPY ["./PG.Crossfit.Ranking.WebApi/PG.Crossfit.Ranking.WebApi.csproj", "PG.Crossfit.Ranking.WebApi/"]
 RUN dotnet restore "./PG.Crossfit.Ranking.WebApi/PG.Crossfit.Ranking.WebApi.csproj"
 COPY . .
 WORKDIR "/src/PG.Crossfit.Ranking.WebApi"
