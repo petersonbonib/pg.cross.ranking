@@ -1,0 +1,6 @@
+@PG.Crossfit.Ranking.WebApi_HostAddress = http://localhost:5289
+
+GET {{PG.Crossfit.Ranking.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  pg_crossfit_ranking_webapi:
+    container_name: pg_crossfit_ranking_webapi
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: pg_crossfit_ranking_webapi
+    ports:
+      - "8075:8080"
