@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Handlers\Comandos\" />
+    <Folder Include="Requisicoes\Comandos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PG.Crossfit.Ranking.Servicos\PG.Crossfit.Ranking.Servicos.csproj" />
+  </ItemGroup>
+
+</Project>

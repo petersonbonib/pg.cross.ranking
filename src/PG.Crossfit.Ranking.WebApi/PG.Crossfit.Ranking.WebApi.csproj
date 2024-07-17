@@ -9,8 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.7" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PG.Crossfit.Ranking.Infra.BancoDeDados\PG.Crossfit.Ranking.Infra.BancoDeDados.csproj" />
+    <ProjectReference Include="..\PG.Crossfit.Ranking.Mediador\PG.Crossfit.Ranking.Mediador.csproj" />
   </ItemGroup>
 
 </Project>
